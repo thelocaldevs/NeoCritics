@@ -11,13 +11,13 @@
 
 /* header section's related css */
 .navbar {
-  border: 1px solid red; /*for testing purpose*/
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 16px 50px;
 }
 
-/* todo: navlinks styles */
+/* navlinks styles */
 .nav-links ul {
   display: flex;
   gap: 40px;
@@ -25,16 +25,39 @@
 }
 .nav-links ul li a {
   text-decoration: none;
+  color: #070707;
+  font-size: 14px;
+  padding: 8px 12px;
+  /* border: 1px solid black; */
+  border-radius: 8px;
+  transition: all 1s ease-in-out;
 }
 
-/* todo: user avatar */
+/* Hover effect */
+.nav-links ul li a:hover {
+  background-color: #bbbbbb;
+}
+
+/* Focus effect */
+.nav-links ul li a:focus {
+  color: rgb(35, 109, 248);
+  border-bottom: 2px solid rgb(35, 109, 248);
+}
+
+/* user avatar */
 .user-avatar {
-  width: 64px;
-  height: 64px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   overflow: hidden;
 }
 .user-avatar img {
   width: 100%;
   height: 100%;
+}
+
+/* logo section */
+.navbar .logo h1 {
+  font-size: 22px;
+  font-weight: 700;
 }
