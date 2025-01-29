@@ -1,0 +1,40 @@
+/* Open sans font from google font api */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+/* reset global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* header section's related css */
+.navbar {
+  border: 1px solid red; /*for testing purpose*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* todo: navlinks styles */
+.nav-links ul {
+  display: flex;
+  gap: 40px;
+  list-style-type: none;
+}
+.nav-links ul li a {
+  text-decoration: none;
+}
+
+/* todo: user avatar */
+.user-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.user-avatar img {
+  width: 100%;
+  height: 100%;
+}
