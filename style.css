@@ -154,7 +154,8 @@ p {
 }
 
 /* Featured Reviews Sections */
-#featured_section {
+#featured_section,
+#popular_section {
   max-width: 100vw;
   padding: 40px 20px;
 }
@@ -168,9 +169,23 @@ p {
   border-radius: 10px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
+.card-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.card-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .card-header {
   width: 100%;
   height: 220px;
+}
+.card-image {
+  width: 200px;
 }
 .card-header img {
   width: 100%;
@@ -215,4 +230,35 @@ p {
 }
 .card-footer button:hover {
   background-color: rgb(17, 84, 207);
+}
+
+/* About Section */
+.about-text {
+  width: 90vw;
+  margin: 0 auto;
+}
+.about-text p {
+  text-align: center;
+  font-weight: 500;
+  color: var(--gray-text);
+}
+
+.about-btns {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.learn-btn-outlined {
+  border: 1px solid var(--secondary-color);
+  padding: 14px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--secondary-color);
+  font-weight: 600;
+  transition: all 0.5s;
+}
+.learn-btn-outlined:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
 }
