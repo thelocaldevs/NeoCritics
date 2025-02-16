@@ -7,6 +7,7 @@
   --secondary-color: #007ee6;
   --black-text: rgb(20, 20, 20);
   --gray-text: #202020;
+  --gray: #969696;
 }
 
 /* reset global styles */
@@ -261,4 +262,52 @@ p {
 .learn-btn-outlined:hover {
   background-color: var(--secondary-color);
   color: #fff;
+}
+/* Support section */
+#support_section {
+  margin: 40px 0;
+}
+/* Support form */
+.support-form {
+  width: 550px;
+  margin: 0 auto;
+  /* for debugging may delete later */
+  /* border: 1px solid red; */
+}
+.form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 12px 0;
+}
+.form-control label {
+  font-size: 14px;
+  font-weight: 500;
+}
+.form-control input,
+textarea {
+  background: none;
+  outline: none;
+  border: 1px solid var(--gray);
+  padding: 12px 8px;
+  border-radius: 8px;
+}
+.form-control input:focus {
+  border-color: var(--secondary-color);
+}
+.form-control textarea:focus {
+  border-color: var(--secondary-color);
+}
+.submit-btn {
+  width: 100%;
+  padding: 12px 8px;
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .5s;
+}
+.submit-btn:hover{
+  background-color: rgb(0, 76, 218);
 }

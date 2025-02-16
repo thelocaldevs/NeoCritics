@@ -205,27 +205,30 @@
     </section>
 
     <!-- Support section -->
-    <section id="support-section">
+    <section id="support_section">
         <div class="headline">
             <h1>Support</h1>
         </div>
 
         <!-- form -->
-        <form>
-            <div>
+        <form class="support-form">
+            <div class="form-control">
                 <label>Name</label>
                 <input type="text" name="username" placeholder="Name">
             </div>
-            <div>
+            <div class="form-control">
                 <label>Email</label>
                 <input type="email" name="email" placeholder="Email">
             </div>
-            <div>
+            <div class="form-control">
                 <label>Support message</label>
-                <textarea name="supportMsg" placeholder="Start writing from here..."></textarea>
+                <textarea name="supportMsg" 
+                placeholder="Start writing from here..."
+                rows="6"></textarea>
             </div>
             <div>
-                <button type="submit">Send feedback</button>
+                <button type="submit"
+                class="btn submit-btn">Send feedback</button>
             </div>
         </form>
     </section>
